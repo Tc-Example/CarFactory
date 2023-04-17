@@ -1,7 +1,7 @@
-package cars.factory.builders.toyota;
+package cars.factory.builders.impl.toyota;
 
-import cars.factory.abstraction.CarBuilder;
-import cars.factory.builders.generic.GenericCarBuilder;
+import cars.factory.builders.CarBuilder;
+import cars.factory.builders.impl.generic.GenericCarBuilder;
 import cars.factory.trims.PriusTrimTypes;
 
 public class ToyotaPriusCarBuilder extends GenericCarBuilder {

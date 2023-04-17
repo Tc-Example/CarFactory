@@ -1,4 +1,4 @@
-package cars.factory.abstraction;
+package cars.factory.builders;
 
 public class Car extends CarInformation {
     Car(CarBuilder builder)

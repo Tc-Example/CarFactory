@@ -1,6 +1,6 @@
-package cars.factory.builders.generic.registry;
+package cars.factory.builders.impl.generic.registry;
 
-import cars.factory.builders.generic.GenericCarBuilder;
+import cars.factory.builders.impl.generic.GenericCarBuilder;
 
 import java.util.ArrayList;
 import java.util.Random;

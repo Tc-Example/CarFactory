@@ -1,10 +1,9 @@
-package cars.factory.abstraction;
+package cars.factory.builders;
 
 
-import cars.factory.abstraction.interfaces.TrimType;
-import cars.factory.abstraction.interfaces.VinGenerator;
+import cars.factory.trims.TrimType;
 
-public class CarBuilder extends CarInformation implements VinGenerator {
+public class CarBuilder extends CarInformation {
 
     protected CarBuilder setYear(int year) {
         this.year = year;
@@ -28,7 +27,6 @@ public class CarBuilder extends CarInformation implements VinGenerator {
 
     public Car build()
     {
-        this.vin = createVin();
         return new Car(this);
     }
 

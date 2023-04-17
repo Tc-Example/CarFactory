@@ -1,9 +1,19 @@
-package cars.factory.abstraction.interfaces;
+package cars.factory.builders;
+
+import cars.factory.trims.TrimType;
+import cars.factory.trims.DefaultTrimType;
 
 import java.util.Random;
 
-public interface VinGenerator {
-    default String createVin()
+public abstract class CarInformation {
+
+    int year;
+    String make;
+    String model;
+    TrimType trim = DefaultTrimType.DEFAULT;
+    String vin = createVin();
+
+    private String createVin()
     {
         Random random = new Random();
         String vinChars = "ABCDEFHIJKLMNOPQRSTUVWXYZ0123456789";

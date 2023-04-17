@@ -1,7 +1,7 @@
-package cars.factory.builders.generic;
+package cars.factory.builders.impl.generic;
 
-import cars.factory.abstraction.CarBuilder;
-import cars.factory.abstraction.interfaces.TrimType;
+import cars.factory.builders.CarBuilder;
+import cars.factory.trims.TrimType;
 
 public class GenericCarBuilder extends CarBuilder {
     public GenericCarBuilder(String make, String model, int year, TrimType trim)

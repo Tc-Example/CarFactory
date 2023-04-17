@@ -1,6 +1,8 @@
-import cars.factory.abstraction.Car;
-import cars.factory.builders.generic.registry.GenericCarBuilderRegistry;
-import cars.factory.builders.generic.AutoRegisteringGenericCarBuilder;
+import cars.factory.builders.Car;
+import cars.factory.builders.impl.generic.registry.GenericCarBuilderRegistry;
+import cars.factory.builders.impl.generic.AutoRegisteringGenericCarBuilder;
+import cars.factory.builders.impl.toyota.ToyotaPriusCarBuilder;
+import cars.factory.trims.PriusTrimTypes;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -31,6 +33,11 @@ public class Main {
 
         createCarBuildersFromJsonData(loadCarData());
         makeCars(10);
+
+        ToyotaPriusCarBuilder priusCarBuilder = new ToyotaPriusCarBuilder();
+        priusCarBuilder.setTrim(PriusTrimTypes.THREE);
+        priusCarBuilder.setYear(2012);
+        priusCarBuilder.build().print();
 
     }
 

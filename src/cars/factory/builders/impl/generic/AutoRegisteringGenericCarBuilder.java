@@ -1,6 +1,6 @@
-package cars.factory.builders.generic;
+package cars.factory.builders.impl.generic;
 
-import cars.factory.builders.generic.registry.GenericCarBuilderRegistry;
+import cars.factory.builders.impl.generic.registry.GenericCarBuilderRegistry;
 
 public class AutoRegisteringGenericCarBuilder extends GenericCarBuilder {
     public AutoRegisteringGenericCarBuilder(String make, String model) {
