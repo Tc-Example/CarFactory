@@ -1,6 +1,6 @@
 package cars.factory.children;
 
-import cars.factory.abstraction.TrimType;
+import cars.factory.abstraction.interfaces.TrimType;
 
 public enum PriusTrimTypes implements TrimType {
     ONE, TWO, THREE;

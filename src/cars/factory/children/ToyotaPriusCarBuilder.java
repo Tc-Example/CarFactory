@@ -1,7 +1,6 @@
 package cars.factory.children;
 
 import cars.factory.abstraction.CarBuilder;
-import cars.factory.abstraction.TrimType;
 
 public class ToyotaPriusCarBuilder extends CarBuilder {
 

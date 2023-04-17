@@ -1,5 +1,7 @@
 package cars.factory.abstraction;
 
+import cars.factory.abstraction.interfaces.TrimType;
+
 public abstract class CarInformation {
 
     int year;

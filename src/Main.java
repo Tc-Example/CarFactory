@@ -1,5 +1,4 @@
 import cars.factory.abstraction.Car;
-import cars.factory.abstraction.TrimType;
 import cars.factory.children.PriusTrimTypes;
 import cars.factory.children.ToyotaPriusCarBuilder;
 

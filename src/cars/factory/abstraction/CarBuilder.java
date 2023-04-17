@@ -1,6 +1,7 @@
 package cars.factory.abstraction;
 
 
+import cars.factory.abstraction.interfaces.TrimType;
 import cars.factory.abstraction.interfaces.VinGenerator;
 
 public class CarBuilder extends CarInformation implements VinGenerator {
