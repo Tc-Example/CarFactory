@@ -1,13 +1,14 @@
-package cars.factory.children;
+package cars.factory.builders.toyota;
 
 import cars.factory.abstraction.CarBuilder;
+import cars.factory.builders.generic.GenericCarBuilder;
+import cars.factory.trims.PriusTrimTypes;
 
-public class ToyotaPriusCarBuilder extends CarBuilder {
+public class ToyotaPriusCarBuilder extends GenericCarBuilder {
 
     public ToyotaPriusCarBuilder()
     {
-        setMake("Toyota");
-        setModel("Prius");
+        super("Toyota", "Prius");
     }
 
     public CarBuilder setTrim(PriusTrimTypes trim) {

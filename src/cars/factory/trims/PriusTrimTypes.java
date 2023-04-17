@@ -1,4 +1,4 @@
-package cars.factory.children;
+package cars.factory.trims;
 
 import cars.factory.abstraction.interfaces.TrimType;
 

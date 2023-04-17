@@ -1,7 +1,7 @@
 package cars.factory.abstraction;
 
 public class Car extends CarInformation {
-    protected Car(CarBuilder builder)
+    Car(CarBuilder builder)
     {
         this.year = builder.year;
         this.make = builder.make;
