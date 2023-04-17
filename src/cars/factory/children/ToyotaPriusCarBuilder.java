@@ -1,6 +1,7 @@
 package cars.factory.children;
 
 import cars.factory.abstraction.CarBuilder;
+import cars.factory.abstraction.TrimType;
 
 public class ToyotaPriusCarBuilder extends CarBuilder {
 
@@ -10,8 +11,7 @@ public class ToyotaPriusCarBuilder extends CarBuilder {
         setModel("Prius");
     }
 
-    @Override
-    public CarBuilder setTrim(String trim) {
+    public CarBuilder setTrim(PriusTrimTypes trim) {
         return super.setTrim(trim);
     }
 

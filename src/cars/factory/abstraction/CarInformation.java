@@ -5,7 +5,7 @@ public abstract class CarInformation {
     int year;
     String make;
     String model;
-    String trim;
+    TrimType trim;
     String vin;
 
 }

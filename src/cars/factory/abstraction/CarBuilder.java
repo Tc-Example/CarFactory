@@ -20,7 +20,7 @@ public class CarBuilder extends CarInformation implements VinGenerator {
         return this;
     }
 
-    protected CarBuilder setTrim(String trim) {
+    protected CarBuilder setTrim(TrimType trim) {
         this.trim = trim;
         return this;
     }
